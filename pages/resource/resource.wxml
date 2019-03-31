@@ -1,0 +1,16 @@
+<view style='background: url(https://www.dimtim.xyz/image/bg_02.jpg) no-repeat 100% 0% /100% 100%;' class="container container-fill">
+	<view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
+		<view class="section section01 {{scrollindex==0?'active':''}}">
+			<text class="section-maintitle">一琪挪车</text>
+			<text class="section-subtitle">定车寻车</text>
+		</view>
+	</view>
+</view>
+<text>\n</text>
+<view bindtap="click">
+      <button type="primary" class="circle" style='background: #20cdff ;'>锁定</button>
+</view>
+<text>\n</text>
+<view bindtap='clicktol'>
+      <button type="primary" class="circle" style='background: #20cdff ;'>寻车</button>
+</view>

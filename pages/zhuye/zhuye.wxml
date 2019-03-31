@@ -1,0 +1,41 @@
+<view class='first'>
+<button class='left' hover-class='button-hover' bindtap='nuoche'>
+<view class='image'>
+<image src='https://www.dimtim.xyz/image/一键挪车.png'></image>
+<p>一琪挪车</p>
+</view>
+</button>
+<button class='right' hover-class='button-hover' bindtap='xun'>
+<view class='image'>
+<image src='https://www.dimtim.xyz/image/寻车服务.png'></image>
+<p>寻车服务</p>
+</view>
+</button>
+<button class='left' hover-class='button-hover' bindtap='pay'>
+<view class='image'>
+<image src='https://www.dimtim.xyz/image/收费处.png'></image>
+<p>停车缴费</p>
+</view>
+</button>
+<button class='right' hover-class='button-hover' bindtap='baoyang'>
+<view class='image'>
+<image src='https://www.dimtim.xyz/image/车辆维修保养.png'></image>
+<p>车辆保养</p>
+</view>
+</button>
+<button class='left' hover-class='button-hover' bindtap='parking'>
+<view class='image'>
+<image src='https://www.dimtim.xyz/image/停车场.png'></image>
+<p>查询停车位</p>
+</view>
+</button>
+<button class='right' hover-class='button-hover'>
+<view class='image'>
+<image src='https://www.dimtim.xyz/image/敬请期待.png'></image>
+<p>敬请期待</p>
+</view>
+</button>
+
+
+
+</view>

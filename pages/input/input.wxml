@@ -1,0 +1,10 @@
+
+<text class='t1'>输入二维码下方序列号即可使用挪车</text>
+<view class='v1'>
+
+<input type='number' class="input" placeholder='请输入序列号' placeholder-class='pc' name='xulie' bindinput='inputXulie'/>
+
+</view>
+
+<button formType="submit" class='bt1'bindtap='click'><text class='t'>立即挪车</text></button>
+<button formType="submit" class='bt'bindtap='return'><text class='t'>返回上一层</text></button>

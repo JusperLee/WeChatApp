@@ -1,0 +1,37 @@
+/* pages/recomd/recomd.wxss */
+.re_a{
+  font-size: 15px;
+  /* text-indent:40px; */
+   margin-top: 30px;
+   text-align:center;
+   margin-bottom: 5px;
+   background-color: #B0E0E6
+}
+.re_b{
+  margin-left:55px;
+  margin-right:55px;
+  border-radius: 30px;
+  padding: 25px 30px;
+  margin-top: 30px;
+  background-color: #20cdff;
+  font-size:25px;
+  color: #ffffff;
+  text-align:center
+}
+.re_c{
+  /* text-align: center;
+  color: #e727ae; */
+  /* margin-top: 30px; */
+  
+  /* font-size: 35px; */
+}
+.imagesize{
+ display:flex;                    
+ /* flex布局 */
+ justify-content: center;         
+ /* 水平轴线居中 */
+}
+.imagesize image { 
+  width:400rpx;
+  height:400rpx;
+}

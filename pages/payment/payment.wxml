@@ -1,0 +1,45 @@
+<view class="wallet_homepage">
+
+  <view class="pay_card">
+    <view class="con_car car_num">
+      <text class="con_name">车牌号 : </text>
+      <text class="car_num_text">{{carNum}}</text>
+    </view>
+    <view class="con_car car_pay">
+      <text class="con_name">停车费 : </text>
+      <text class="car_num_text">{{payMoney}}</text> 元
+    </view>
+  </view>
+
+  <view class="notice">
+    <view class="notice_tit">
+      <view class="not_img01"></view>
+      <text class="not_text01">收费标准：</text>
+    </view>
+
+    <view class="notice_detail">
+      <view class="not_img02"></view>
+      <text class="not_text01">{{feeScale1}}</text>
+    </view>
+
+    <view class="notice_detail">
+      <view class="not_img02"></view>
+      <text class="not_text01">{{feeScale2}}</text>
+    </view>
+  </view>
+
+  <view class="bottom">
+    <!--底部客服电话-->
+    <view class="tel">{{telMessage}}</view>
+    <view class="tel">
+      <image src="../image/icon_phone.png" mode="aspectFit" class="phone_icon"></image>
+      <view>客服电话：</view>
+      <view bindtap="phoneCall">{{phoneNumber}}</view>
+    </view>
+  </view>
+  <!--支付按钮-->
+  <view class="pay_money" bindtap="recharge">
+    <image src="../image/pay_btn.png" mode="aspectFit" class="pay_icon"></image>
+  </view>
+
+</view>

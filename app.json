@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/zhuye/zhuye",
+    "pages/baoyang/baoyang",
+    "pages/recomd/recomd",
+
+    "pages/resource/resource",
+    "pages/lineToCar/lineToCar",
+
+    "pages/keyboard/keyboard",
+    "pages/payment/payment",
+    "pages/find/find",
+
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/nuoche/nuoche",
+    "pages/info/info",
+    "pages/input/input"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#20cdff",
+    "navigationBarTitleText": "智能停车挪车系统",
+    "navigationBarTextStyle":"black"
+  }
+}

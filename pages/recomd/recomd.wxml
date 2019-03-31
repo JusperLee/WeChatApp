@@ -1,0 +1,13 @@
+<!--pages/recomd/recomd.wxml-->
+<view class='imagesize'>
+<image class='in-image' src="https://www.dimtim.xyz/image/wash.jpg" bindload="imageLoad" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image>
+</view>
+<view>
+<view class='re_a'>
+<text>尊敬的用户\n根据科学的计算方式,挪挪推荐您的爱车保养</text>
+</view>
+<!-- <view class='re_c'>最佳时间为</view> -->
+<view class='re_b'wx:if="{{day1 <= 0}}"><text>最佳时间为\n最近一周内</text></view>
+<view class='re_b'wx:else><text>最佳时间为\n{{day1}}个月后</text></view>
+</view>

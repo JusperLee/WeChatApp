@@ -1,0 +1,30 @@
+<view id="V1">
+    <image id="image1" mode="scaleToFill" src="https://www.dimtim.xyz/image/背景.png"></image>
+    <image id ="image2" mode="scaleToFill" src="{X{imageGraghsign}}"></image>
+    <view id="V1-1">{{message_satefy1}}</view>
+    <view id="V1-2">{{message_satefy2}}</view>
+</view>
+
+<view>
+    <view id="V2-1">
+        <image id="V2-1-image1" mode="scaleToFill" src="https://www.dimtim.xyz/image/警示.png"></image>
+        <view id="V2-1-V1">
+            <view id="V2-1-V1-V1">{{message_sign1}}</view>
+            <view id="V2-1-V1-V2">{{message_sign2}}</view>
+        </view>
+    </view>
+    <view id="V2-2">
+        <image id="V2-2-image" mode="scaleToFill" src="https://www.dimtim.xyz/image/车牌号.png"></image>
+        <view id="V2-2-V1">{{message_card1}}</view>
+        <view id="V2-2-V2">{{message_card2}}</view>
+    </view>
+     <view id="V2-3">
+        <image id="V2-3-image" mode="scaleToFill" src="https://www.dimtim.xyz/image/车位置.png"></image>
+        <view id="V2-3-V1">{{ message_positon1}}</view>
+        <view id="V2-3-V2">{{textData.name}}</view>
+    </view>
+    <view id="V2-4">
+        <button id="V2-4-buttom1" type='primary' bindtap="back">返回</button>
+        <button id="V2-4-buttom2" type='primary' bindtap="agree">确认</button>
+    </view>
+</view>

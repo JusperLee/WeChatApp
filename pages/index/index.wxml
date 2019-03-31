@@ -1,0 +1,17 @@
+
+<view class='v1'>
+<image class='img1' src='https://www.dimtim.xyz/image/警示1.png' mode="widthFix"></image>
+<p class='t1'>请不要恶意扫码或者输入序列号挪车</p>
+
+</view>
+
+
+<view class='t2'>
+<text>欢迎使用一键挪车</text>
+
+</view>
+
+<view>
+<button class="btn1" bindtap='scan'>扫码挪车</button> 
+<button class="btn2" bindtap='click'>手动输入序列号</button> 
+</view>

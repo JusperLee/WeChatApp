@@ -1,0 +1,168 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.green{
+    color: #09BB07;
+}
+.red{
+    color: #F76260;
+}
+.blue{
+    color: #10AEFF;
+}
+.yellow{
+    color: #FFBE00;
+}
+.gray{
+    color: #C9C9C9;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}
+
+.tc{
+    text-align: center;
+}
+
+
+checkbox, radio{
+    margin-right: 5px;
+}
+
+.btn-area{
+    padding: 0 15px;
+}
+.btn-area button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page {
+    min-height: 100%;
+    flex: 1;
+    background-color: #FBF9FE;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    overflow: hidden;
+}
+.page__hd{
+    padding: 40px;
+}
+.page__title{
+    display: block;
+    font-size: 20px;
+}
+.page__desc{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888888;
+}
+
+.section{
+    /* margin-bottom: 35px; */
+    font-size: 15px;
+}
+.section_gap{
+    padding: 0 15px;
+}
+.btn_car{
+  /* 按钮上的间距 */
+  margin-top: 30px;
+  text-align: center
+}
+.bc_car{
+  background-color: #20cdff;
+  text-align: center; 
+}
+.bc_car1{
+  margin-left:35px;
+  margin-right:35px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  /* margin-top: 10px; */
+  background-color:  #20cdff;
+  font-size: 15px;
+  text-align:center
+}
+input{
+    padding: 10px 15px;
+    background-color: #fff;
+}
+/* 去除外边框 */
+button::after{ 
+    border: none; 
+}
+button{
+  border-radius: 30px;
+  margin-left:35px;
+  margin-right:35px;
+  background-color: #6fc0e6;
+}
+.section_title{
+    padding: 10px 15px;
+    /* margin-bottom: 3px; */
+    text-align: center;
+    /* 行高 */
+    line-height: 50rpx;
+    font-size: 15px;
+}
+.section_gap .section_title{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.imagesize{
+ display:flex;                    
+ /* flex布局 */
+ justify-content: center;         
+ /* 水平轴线居中 */
+}
+.imagesize image { 
+  width:400rpx;
+  height:400rpx;
+}

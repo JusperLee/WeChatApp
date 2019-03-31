@@ -1,0 +1,137 @@
+.wallet_homepage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.dimtim.xyz/image/payment_bg.jpg) top center;
+  background-size: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.pay_card {
+  position: relative;
+  top: 208rpx;
+  width: 100%;
+  height: 393rpx;
+  background: url(https://www.dimtim.xyz/image/pay_card.png) top center;
+  background-size: 100%;
+}
+
+.con_car {
+  position: relative;
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 77rpx;
+  font-weight: bold;
+  color: #60656e;
+}
+
+.car_num {
+  top: 60rpx;
+}
+
+.car_pay {
+  top: 152rpx;
+}
+
+.con_name {
+  position: relative;
+  left: 10rpx;
+}
+
+.car_num_text {
+  margin: 0 40rpx;
+  font-size: 35rpx;
+  color: #49e4ff;
+  font-weight: Blod;
+  text-align: center;
+}
+
+/*收费标准*/
+
+.notice {
+  position: relative;
+  top: 360rpx;
+  width: 64%;
+  margin: 0 auto;
+}
+
+.notice_tit {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  font-family: "宋体";
+  font-size: 28rpx;
+  line-height: 64rpx;
+  color: #7f848d;
+}
+
+
+.not_text01 {
+  margin-left: 15rpx;
+}
+
+.not_img02 {
+  background: url(https://www.dimtim.xyz/image/icon_pay.png) no-repeat;
+  background-size: 100%;
+  background-position: 0rpx;
+  width: 50rpx;
+  height: 35rpx;
+}
+
+.notice_detail {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  font-family: "宋体";
+  font-size: 24rpx;
+  line-height: 54rpx;
+  color: #7f848d;
+}
+
+/*客服电话*/
+
+.bottom {
+  position: absolute;
+  bottom: 154rpx;
+  width: 100%;
+  font-size: 22rpx;
+  font-family: '宋体';
+  color: #8b9397;
+  line-height: 36rpx;
+}
+
+.tel {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone_icon {
+  width: 22rpx;
+  height: 22rpx;
+  margin: 0 10rpx;
+}
+
+/*支付按钮*/
+
+.pay_money {
+  position: fixed;
+  left: 0rpx;
+  bottom: 0rpx;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pay_icon {
+  width: 250px;
+  height: 80rpx;
+  margin-bottom: 50rpx;
+}

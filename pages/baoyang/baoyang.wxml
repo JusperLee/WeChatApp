@@ -1,0 +1,51 @@
+<view class='imagesize'>
+<view wx:if="{{im == 0}}"><image class='in-image' src="https://www.dimtim.xyz/image/BMW1.jpg" bindload="imageLoad" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image></view>
+<view wx:elif="{{im == 1}}"><image class='in-image' src="https://www.dimtim.xyz/image/BMW2.jpg" bindload="imageLoad" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image></view>
+<view wx:elif="{{im == 2}}"><image class='in-image' src="https://www.dimtim.xyz/image/NOW1.jpg" bindload="imageLoad" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image></view>
+<view wx:elif="{{im == 3}}"><image class='in-image' src="https://www.dimtim.xyz/image/NOW2.jpg" bindload="imageLoad" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image></view>
+<view wx:else><image class='in-image' src="https://www.dimtim.xyz/image/BMW1.jpg" bindload="imageLoad" 
+style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;"></image></view>
+</view>
+<form bindsubmit="formSubmit">
+<view class="section">
+  <view class="section_title">请选择您的爱车车型</view>
+  <picker mode="multiSelector" name="type" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class='bc_car1'>
+      {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+</view>
+<view>
+<view class="section_title">请选择上次保养的时间</view>
+  <picker bindchange="bindPickerChange" name="Data" value="{{index}}" range="{{array}}">
+    <view class="bc_car1">
+      {{array[index]}}个月前
+    </view>
+  </picker>
+</view>
+<!-- <view class="section">
+  <view class="section_title">请选择上次保养的时间</view>
+  <input class='bc_car' id="time" name="Data" type='text' placeholder='例如：输入5，表示5天前'/>
+  <!-- <picker mode="date" name="data" value="{{date}}" start="2015-09-01" end="2019-09-01" bindchange="bindDateChange">
+    <view class="bc_car">
+      {{date}}
+    </view>
+  </picker> 
+</view> -->
+<button class='btn_car' size='default' form-type='submit'>提交</button>
+</form>
+<!-- <form bindsubmit='formSubmit'>
+<view >
+<view class='section_title'> 请输入您的爱车型号</view>
+<input class='bc_car' id="name" name="type" type="text" placeholder="例如：宝马BMW1"/>
+</view>
+<view >
+<view class='section_title'>请输入您上次保养的时间</view>
+<input class='bc_car' id="time" name="Data" type='text' placeholder='例如：输入5，表示5天前'/>
+</view>
+<button class='btn_car' size='default' type='default' form-type='submit'>提交</button>
+</form> -->

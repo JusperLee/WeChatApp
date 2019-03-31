@@ -1,0 +1,41 @@
+view.first{
+  background-color: #20cdff;
+  width: 100%;
+  height: 100%
+}
+button.left{
+  background-color: #1E90FF;
+  width: 350rpx;
+  height: 350rpx;
+  margin-left: 20rpx;
+  margin-right: 5rpx;
+  margin-top: 10rpx;
+  border-radius: 15rpx;
+  float: left
+}
+button.right{
+  background-color: #1E90FF;
+  width: 350rpx;
+  height: 350rpx;
+  margin-right: 20rpx;
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+  border-radius: 15rpx;
+  float: left
+}
+page{
+  height: 100%
+}
+image{
+  width: 130rpx;
+  height: 130rpx
+}
+view.image{
+  margin-top: 80rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+button.button-hover{
+  background-color: rgba(37, 146, 255, 0.897)
+}

@@ -1,0 +1,7 @@
+
+<view>
+    <canvas canvas-id="ball"></canvas>
+</view>
+<text>\n</text>
+<image src="https://www.dimtim.xyz/image/jinggao.png" bindload="imageLoad" data-index="{{ index }}" 
+style="width:100%; height:130rpx;"></image>

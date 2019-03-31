@@ -1,0 +1,49 @@
+.t1 {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  font-family: "Microsoft YaHei", sans-serif;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.input {
+  border: 4px #20cdff solid;
+  width: 80%;
+  border-radius: 30px;
+  height: 45px;
+  margin-top: 20%;
+  
+}
+
+.pc {
+  color: #aab2bd;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.v1{
+  display: flex;
+  flex-direction: rowl;
+  justify-content: center;
+}
+.bt1{
+  background-color: #20cdff;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 8%;
+  height: 100%;
+}
+
+
+.bt {
+  background-color: #cfcfcf;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 8%;
+  height: 100%;
+}
+.t{
+  	color:#828282;
+}

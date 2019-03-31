@@ -1,0 +1,74 @@
+<!--<view class="title">查询停车费</view>-->
+<view class="page">
+  <view class="title" bindtap="hideKeyboard">
+  </view>
+  <!--输入框-->
+  <block wx:if="{{!isFocus}}">
+    <view class="text text_con" bindtap="showKeyboard">
+      <image src="../image/icon_search.png" mode="aspectFit" class="search_icon"></image>
+      <text class="placeholder">{{placeholder}}</text>
+    </view>
+  </block>
+  
+  <!--输入框打开键盘样式-->
+  <block wx:else="{{isFocus}}">
+    <view class="text text_con_focus" bindtap="bindFocus" >
+      {{textValue}}
+      <view animation="{{animationData}}">|</view>
+    </view>
+  </block>
+
+   <!--扫描识别  -->
+    <image src="../image/sao.png" mode="aspectFit" class="photo_icon" bindtap="PRbtn"></image>
+
+  <!--键盘-->
+  <block wx:if="{{isKeyboard}}">
+    <view class="keyboard">
+
+      <!--省份简写键盘-->
+      <view class="td td_nor" wx:for="{{keyboardValue}}" wx:for-index="idx" wx:for-item="itemName" bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}" hover-class="board_bg" hover-start-time="0" hover-stay-time="80">
+        {{itemName}}
+      </view>
+
+      <!--数字键盘不可点击-->
+      <view wx:if="{{specialBtn && !tapNum}}" class="td td_num board_bg" wx:for="{{keyboardNumber}}" wx:for-index="idx" wx:for-item="itemName">
+        {{itemName}}
+      </view>
+
+      <!--数字键盘可点击-->
+      <view wx:if="{{specialBtn && tapNum}}" class="td td_num" wx:for="{{keyboardNumber}}" wx:for-index="idx" wx:for-item="itemName" bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}" hover-class="board_bg" hover-start-time="0" hover-stay-time="80">
+        {{itemName}}
+      </view>
+
+      <!--字母键盘-->
+      <view wx:if="{{specialBtn}}" class="td td_num" wx:for="{{keyboardAlph}}" wx:for-index="idx" wx:for-item="itemName" hover-class="board_bg" hover-start-time="0" hover-stay-time="80">
+          <view class="del_icon" wx:if="{{idx == 19}}" bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}">
+            <!--image src="/images/icon_del.png" mode="aspectFit" class="del_icon"></image-->
+          </view>
+          <view wx:elif="{{idx != 19}}"  bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}">
+          {{itemName}}
+          </view>
+      </view>
+    </view>
+  </block>
+
+  <!--提示语句-->
+  <view class="warn" bindtap="hideKeyboard">
+    <text class="warn_text">{{warnMessage}}</text>
+  </view>
+
+  <!--查询按钮-->
+    <view class="title" bindtap="onclick">
+    <image src="../image/check_btn.png" mode="aspectFit" class="title-img"></image>
+    </view>
+
+  <!--底部客服电话-->
+  <view class="bottom">
+    <view class="tel"></view>
+    <view class="tel">
+      <image src="../image/icon_phone.png" mode="aspectFit" class="phone_icon"></image>
+      <view>客服电话：</view>
+      <view bindtap="phoneCall">{{phoneNumber}}</view>
+    </view>
+  </view>
+</view>

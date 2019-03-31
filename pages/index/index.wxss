@@ -1,0 +1,41 @@
+.btn1 {
+  
+  background-color: #20cdff;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 10%;
+  height: 110%;
+}
+ 
+.btn2 {
+  border: 2px #20cdff solid;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 10%;
+  height: 110%;
+}
+
+.t2 {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  font-family: "Microsoft YaHei", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.t1{
+  display: flex;
+  justify-content: center;
+  color: #C0C0C0;
+
+}
+.v1{
+  background-color: #F5F5F5;
+
+}
+.img1{
+  float: left;
+  width: 6%;
+}
